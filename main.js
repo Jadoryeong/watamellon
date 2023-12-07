@@ -27,7 +27,7 @@ const rightWall = Bodies.rectangle(605, 370, 30, 790, { //오른쪽벽, 괄호�
   render: { fillStyle: "#E6B143" }
 });
 
-const ground = Bodies.rectangle(310, 710, 620, 60, { //밑면, 괄호속에 x,y,너비, 높이 순으로 좌표가 들어감, 중앙을 기준으로 삼기에 오브젝트 길이의 중앙값으로 넣어줘야함
+const ground = Bodies.rectangle(350, 710, 620, 60, { //밑면, 괄호속에 x,y,너비, 높이 순으로 좌표가 들어감, 중앙을 기준으로 삼기에 오브젝트 길이의 중앙값으로 넣어줘야함
   isStatic: true, //기본적으로 물리엔진이 적용되어 있기때문에 true로 되어있지 않다면 벽이 계속 아래로 추락함
   render: { fillStyle: "#E6B143" }
 });
