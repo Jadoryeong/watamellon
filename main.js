@@ -32,7 +32,7 @@ const ground = Bodies.rectangle(310, 710, 620, 60, { //밑면, 괄호속에 x,y,
   render: { fillStyle: "#E6B143" }
 });
 
-const topLine = Bodies.rectangle(310, 120, 620, 2, {  //게임 오버 선
+const topLine = Bodies.rectangle(310, 180, 620, 2, {  //게임 오버 선
   name: "topLine",
   isStatic: true,
   isSensor: true,
