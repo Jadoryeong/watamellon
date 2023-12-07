@@ -32,7 +32,7 @@ const ground = Bodies.rectangle(350, 710, 620, 60, { //밑면, 괄호속에 x,y,
   render: { fillStyle: "#E6B143" }
 });
 
-const topLine = Bodies.rectangle(310, 150, 620, 2, {
+const topLine = Bodies.rectangle(350, 150, 620, 2, {
   name: "topLine",
   isStatic: true,
   isSensor: true,
