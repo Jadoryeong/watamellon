@@ -71,7 +71,7 @@ function addFruit() {
   World.add(world, body);
 }
 
-window.onkeyup = (event) => {  //윈도우 키 입력
+window.onkeydown = (event) => {  //윈도우 키 입력
   if (disableAction) {
     return;
   }
