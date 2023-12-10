@@ -48,8 +48,6 @@ let currentBody = null;
 let currentFruit = null;
 let disableAction = false;
 let interval = null;
-let score = 0;
-
 
 //과일 생성
 function addFruit() {
@@ -128,9 +126,6 @@ Events.on(engine, "collisionStart", (event) => {
   event.pairs.forEach((collision) => {
     if (collision.bodyA.index === collision.bodyB.index) {  //만약 두개의 과일이 같다면
       const index = collision.bodyA.index;
-
-      const fruit = FRUITS[collision.bodyA.index];
-      score += fruit.score;
 
       if (index === FRUITS.length - 1) {
         return;
