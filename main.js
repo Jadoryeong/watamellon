@@ -60,7 +60,7 @@ function addFruit() {
     render: {
       sprite: { texture: `${fruit.name}.png` }
     },
-    restitution: 2.0,
+    restitution: 1.7,
   });
 
   currentBody = body;
