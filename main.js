@@ -150,12 +150,25 @@ window.onkeyup = (event) => {
   }
 }
 
+function initGame() {
+  //게임 오버 상태를 해제합니다.
+  disableAction = false;
+
+  //모든 과일을 제거합니다.
+  World.remove(world, FRUITS);
+
+  //점수를 0으로 초기화합니다.
+  score = 0;
+}
+
 Events.on(engine, "collisionStart", (event) => {
   event.pairs.forEach((collision) => {
     if (
       !disableAction &&
       (collision.bodyA.name === "topLine" || collision.bodyB.name === "topLine")) {
       alert("Game over");
+      alert(`점수: ${score}`);
+      initGame();
     }    
     
     //만약 동일한 과일이 충돌한다면
